@@ -1,0 +1,15 @@
+$ bash run_kubernetes.sh
+Error from server (AlreadyExists): pods "devopsproject04" already exists
+NAME              READY   STATUS             RESTARTS   AGE
+devopsproject04   0/1     ImagePullBackOff   0          33m
+error: unable to forward port because pod is not running. Current status=Pending
+
+newma@Nheeon-Technologies MINGW64 ~/DevOps_Microservices/project-ml-microservice-kubernetes (master)
+$ bash make_prediction.sh
+Port: 8000
+{
+  "prediction": [
+    20.35373177134412
+  ]
+}
+
